@@ -1,29 +1,31 @@
-package com.week5.Guided.agregasi;
+package com.week5.Guided1;
 
 public class Mahasiswa {
-    private String NIM, Nama;
-    
-    //Constructor
-    public Mahasiswa(String NIM, String Nama){
-        this.NIM = NIM;
-        this.Nama = Nama;
+    private String nim;
+    private String nama;
+    private int nilai;
+
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public void setNim(String nim) {
+        this.nim = nim;
     }
     
-    //Gentter
-    public String getNIM(){
-        return NIM;
+    public void setNilai(int nilai){
+        this.nilai = nilai;
+    }
+
+    public String getNama() {
+        return this.nama;
+    }
+
+    public String getNim() {
+        return this.nim;
     }
     
-    public String getNama(){
-        return Nama;
-    }
-    
-    //Setter
-    public void setNIM(String NIM){
-        this.NIM = NIM;
-    }
-    
-    public void setNama(String Nama){
-        this.Nama = Nama;
+    public int getNilai(){
+        return this.nilai;
     }
 }

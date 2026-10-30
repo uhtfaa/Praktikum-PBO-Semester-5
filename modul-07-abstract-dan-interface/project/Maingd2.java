@@ -1,0 +1,14 @@
+package com.week7.guided.gd2;
+
+public class Maingd2 {
+    public static void main(String[] args) {
+        Payable[] items = new Payable[2];
+        items[0] = new Invoice("Monitor LED", 2, 1500000);
+        items[1] = new SalariedEmployee("Budi", 5000000);
+        
+        // Dynamic dispatch: Java otomatis mengeksekusi rumus yang tepat sesuai objek
+        for (Payable item : items){
+            System.out.println("jumlah yang perlu dibayar: Rp"+item.getPaymentAmount());
+        }
+    }
+}
